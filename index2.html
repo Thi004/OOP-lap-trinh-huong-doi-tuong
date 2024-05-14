@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Tạo mảng các học sinh : tên , điểm , lớp
+    //1. in ra tất cae các học sinh
+    //2. in ra học sinh có điểm cao nhất
+    //3. in ra học sinh học lơp C03
+
+
+    let list = [
+        {
+            name: 'Bình',
+            point: 7,
+            class: 'C01'
+        },
+        {
+            name: 'Lan',
+            point: 5,
+            class: 'C03'
+        },
+        {
+            name: 'Nam',
+            point: 9,
+            class: 'C03'
+        }
+    ];
+
+    for (let i = 0; i < list.length; i++) {
+        document.write(`1. ${list[i].name},${list[i].point},${list[i].class} <br>`);
+    }
+    let max = list[0];
+    for (let i = 0; i < list.length; i++) {
+        if (max.point < list[i].point) {
+            max = list[i];
+        }
+    }
+    document.write(`2. ${max.name},${max.point},${max.class} <br> `);
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].class === 'C03') {
+            document.write(`3. ${list[i].name},${list[i].point},${list[i].class} <br> `);
+        }
+    }
+
+</script>
+</body>
+</html>

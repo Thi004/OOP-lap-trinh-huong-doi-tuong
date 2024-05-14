@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!---
+OOP : là phương pháp lập trình theo hướng đối tượng
+ - Mô tả dữ liệu thành dạng đối tượng ( number, string, object)
+ - Lớp
+ - 0bject : các thuộc tính và phương thức
+ ---->
+<script>
+    //ten , gia, so luong
+    let sp = {
+        name: 'AAA',
+        price: 20,
+        quantity: 100
+    }
+    //alert(sp.name);
+
+
+    // Tạo mảng có 3 sản phẩm
+    let list = [
+        {
+            name: 'Milk',
+            price: 50,
+            quantity: 100
+        },
+        {
+            name: 'Coca',
+            price: 60,
+            quantity: 80
+        },
+        {
+            name: 'Coffe',
+            price: 70,
+            quantity: 120
+        }
+    ];
+    //for (let i = 0; i < list.length; i++) {
+      //  document.write(list[i].name + ', '+ list[i].price + '<br>')}
+    // ---- >
+     // in ra các sp có giá >= 60
+    for (let i = 0; i < list.length; i++) {
+        if (list[i].price >= 60) {
+            document.write(list[i].name + ', ' + list[i].price + '<br>')
+        }
+    }
+
+</script>
+</body>
+</html>
